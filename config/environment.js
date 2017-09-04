@@ -4,13 +4,20 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'contact-list',
     environment: environment,
+	contentSecurityPolicy: {'connect-src': "'self' wss://*.firebaseio.com"},
+    firebase: {
+    apiKey: 'xyz',
+    authDomain: 'ember-project-75004.firebaseapp.com',
+    databaseURL: 'https://ember-project-75004.firebaseio.com',
+    storageBucket: 'ember-project-75004.appspot.com',
+  },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
-      FEATURES: {
-        // Here you can enable experimental features on an ember canary build
-        // e.g. 'with-controller': true
-      }
+		 EXTEND_PROTOTYPES: {
+      Date: false,
+    }
+    
     },
 
     APP: {

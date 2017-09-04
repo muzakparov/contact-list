@@ -1,0 +1,33 @@
+{{outlet}}
+<h1>Contacts</h1>
+
+<table class="table table-striped">
+
+   <thead>
+		<tr>
+			<th>My Contacts</th>
+		</tr>
+		<tr>
+			<th>Full Name</th>				 
+			<th>Phone No</th>
+			<th>Mobile No</th>	
+			<th>Actions</th>				 
+		</tr>
+	</thead>
+	<tbody>
+	{{#each model as |contact|}}
+		<tr>
+			<td>{{contact.firstName}} {{contact.lastName}}</td>
+			<td>{{contact.phone}}</td>
+			<td>{{contact.mobile}}</td>
+			<td><button {{action 'deleteContact' contact.id}} class="btn btn-danger">Delete</button> <span class="btn btn-warning">{{#link-to 'contacts.edit' contact.id}}Edit{{/link-to}}</span></td>
+		</tr>
+	{{/each}}
+	</tbody>
+
+</table>
+
+{{#double-clickable}}
+  This is a double clickable area!
+{{/double-clickable}}
+	
