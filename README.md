@@ -1,53 +1,11 @@
 # Contact-list
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+I used bootstrap for styling and firebase for database.
 
-## Prerequisites
+It meets minimum requirement with Delete Button.
 
-You will need the following things properly installed on your computer.
+I failed to implement Edit though, there was only one good resource about this Uncaught Error and probably the solution was to work with components and event handlers.
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+It would take some more time to fix it, I think. My unanswered stackoverflow on it: https://stackoverflow.com/questions/46043918/attempted-to-handle-event-deleterecord-on-contact-someid-while-in-state-roo
 
-## Installation
-
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
-
-## Running / Development
-
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
-
-### Code Generators
-
-Make use of the many generators for code, try `ember help generate` for more details
-
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Overall, Ember.js turned to be pretty fast and cool. :) Thanks for giving me an opportunity to get acquianted with it.
